@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Currency Converter
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+<ion-list no-lines>
+
+  <ion-item>
+    <ion-label stacked>Amount</ion-label>
+    <ion-input [(ngModel)]="amount" type="text"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label stacked>From:</ion-label>
+    <ion-select [(ngModel)]="from">
+      <ion-option value="AUSTRALIAN_DOLLAR">AUSTRALIAN DOLLAR</ion-option>
+      <ion-option value="BRAZILIAN_REAL">BRAZILIAN REAL</ion-option>
+      <ion-option value="BRITISH_POUND">BRITISH POUND</ion-option>
+      <ion-option value="CANADIAN_DOLLAR">CANADIAN DOLLAR</ion-option>
+      <ion-option value="CHILEAN_PESO">CHILEAN PESO</ion-option>         
+      <ion-option value="CHINESE_YUAN_RENMINBI">CHINESE YUAN RENMINBI</ion-option>
+      <ion-option value="CZECH_KORUNA">CZECH KORUNA</ion-option>
+      <ion-option value="DANISH_KRONE">DANISH KRONE</ion-option> 
+      <ion-option value="EURO">EURO</ion-option>             
+      <ion-option value="HONG_KONG_DOLLAR">HONG KONG DOLLAR</ion-option>
+      <ion-option value="HUNGARIAN_FORINT">HUNGARIAN FORINT</ion-option>
+      <ion-option value="INDIAN_RUPEE">INDIAN RUPEE</ion-option>
+      <ion-option value="INDONESIAN_RUPIAH">INDONESIAN RUPIAH</ion-option>
+      <ion-option value="ISRAELI_NEW_SHEKEL">ISRAELI NEW SHEKEL</ion-option>
+      <ion-option value="JAPANESE_YEN">JAPANESE YEN</ion-option>
+      <ion-option value="KOREAN_WON">KOREAN WON</ion-option>
+      <ion-option value="MALAYSIAN_RINGGIT">MALAYSIAN RINGGIT</ion-option>
+      <ion-option value="MEXICAN_PESO">MEXICAN PESO</ion-option>
+      <ion-option value="NEW_ZEALAND_DOLLAR">NEW ZEALAND DOLLAR</ion-option>
+      <ion-option value="NORWEGIAN_KRONE">NORWEGIAN KRONE</ion-option>
+      <ion-option value="PAKISTAN_RUPEE">PAKISTAN RUPEE</ion-option>
+      <ion-option value="PHILIPPINE_PESO">PHILIPPINE PESO</ion-option>
+      <ion-option value="POLISH_ZLOTY">POLISH ZLOTY</ion-option>
+      <ion-option value="RUSSIAN_RUBLE">RUSSIAN RUBLE</ion-option>
+      <ion-option value="SINGAPORE_DOLLAR">SINGAPORE DOLLAR</ion-option>
+      <ion-option value="SOUTH_AFRICAN_RAND">SOUTH AFRICAN RAND</ion-option>
+      <ion-option value="SWEDISH_KRONA">SWEDISH KRONA</ion-option>
+      <ion-option value="SWISS_FRANC">SWISS FRANC</ion-option>
+      <ion-option value="TAIWAN_DOLLAR">TAIWAN DOLLAR</ion-option>
+      <ion-option value="THAI_BAHT">THAI BAHT</ion-option>
+      <ion-option value="TURKISH_LIRA">TURKISH LIRA</ion-option>
+      <ion-option value="US_DOLLAR">US DOLLAR</ion-option>
+
+    </ion-select>
+  </ion-item>
+
+    <ion-item>
+      <ion-label stacked>To:</ion-label>
+      <ion-select [(ngModel)]="to">
+        <ion-option value="USD">USD</ion-option>
+        <ion-option value="EUR">EUR</ion-option>
+        <ion-option value="JPY">JPY</ion-option>
+        <ion-option value="GBP">GBP</ion-option>
+        <ion-option value="CHF">CHF</ion-option>
+        <ion-option value="CAD">CAD</ion-option>
+        <ion-option value="AUD">AUD</ion-option>
+        <ion-option value="HKD">HKD</ion-option>
+      </ion-select>
+    </ion-item>
+
+  <ion-item>
+  <button ion-button (click)=convertClick() block>Convert</button>
+</ion-item>
+
+</ion-list>
+</ion-content>
